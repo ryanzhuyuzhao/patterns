@@ -1,5 +1,8 @@
 package org.mine.patterns.factory;
 
+/**
+ * 芝士披萨
+ */
 public class CheesePizza extends Pizza {
     @Override
     public void prepare() {
