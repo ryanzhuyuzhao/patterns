@@ -35,6 +35,4 @@ public interface IGamePlayer {
 	 * @date 2019/5/16 11:21
 	 */
 	void upGrade();
-
-	void test();
 }
