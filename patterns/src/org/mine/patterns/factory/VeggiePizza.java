@@ -1,23 +1,21 @@
 package org.mine.patterns.factory;
 
+import org.mine.patterns.factory.abstractfactory.PizzaIngredientFactory;
+
 public class VeggiePizza extends Pizza {
+    PizzaIngredientFactory ingredientFactory;
+
+    public VeggiePizza(PizzaIngredientFactory ingredientFactory) {
+        this.ingredientFactory = ingredientFactory;
+    }
+
     @Override
     public void prepare() {
-        System.out.println("prepare VeggiePizza");
-    }
+        System.out.println("Preparing " + name);
+        dough = ingredientFactory.createDough();
+        sauce = ingredientFactory.createSauce();
+        cheese = ingredientFactory.createCheese();
+        veggies = ingredientFactory.createVeggies();
 
-    @Override
-    public void bake() {
-        System.out.println("bake VeggiePizza");
-    }
-
-    @Override
-    public void cut() {
-        System.out.println("cut VeggiePizza");
-    }
-
-    @Override
-    public void box() {
-        System.out.println("box VeggiePizza");
     }
 }
