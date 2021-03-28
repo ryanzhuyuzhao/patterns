@@ -1,4 +1,4 @@
-package org.mine.patterns.adapter;
+package org.mine.patterns.adapter.old;
 
 /**
  * @filename Adapter

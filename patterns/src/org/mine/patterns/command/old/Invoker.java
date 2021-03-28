@@ -1,4 +1,4 @@
-package org.mine.patterns.command;
+package org.mine.patterns.command.old;
 
 /**
  * @filename Invoker
