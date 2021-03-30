@@ -1,5 +1,7 @@
 package org.mine.patterns.iteratorpattern;
 
+import java.util.Iterator;
+
 /**
  * @ClassName DineMenu
  * @Description
@@ -7,7 +9,7 @@ package org.mine.patterns.iteratorpattern;
  * @Date 2021/3/29 0029 22:56
  * @Version 1.0
  */
-public class DineMenu {
+public class DineMenu implements Menu{
     private static final int MAX_ITEMS = 6;
     private int numberOfItems = 0;
     private MenuItem[] menuItems;

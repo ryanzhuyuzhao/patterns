@@ -1,5 +1,7 @@
 package org.mine.patterns.iteratorpattern;
 
+import java.util.Iterator;
+
 /**
  * @ClassName DinerMenuIterator
  * @Description
@@ -7,7 +9,7 @@ package org.mine.patterns.iteratorpattern;
  * @Date 2021/3/29 0029 23:02
  * @Version 1.0
  */
-public class DinerMenuIterator implements Iterator{
+public class DinerMenuIterator implements Iterator {
     private MenuItem[] items;
     private int position = 0;
 

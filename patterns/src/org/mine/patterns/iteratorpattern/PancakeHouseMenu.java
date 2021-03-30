@@ -1,5 +1,6 @@
 package org.mine.patterns.iteratorpattern;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -9,7 +10,7 @@ import java.util.List;
  * @Date 2021/3/29 0029 22:52
  * @Version 1.0
  */
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     private List<MenuItem> menuItems;
 
 
@@ -24,5 +25,9 @@ public class PancakeHouseMenu {
 
     public void setMenuItems(List<MenuItem> menuItems) {
         this.menuItems = menuItems;
+    }
+
+    public Iterator createIterator() {
+        return new PancakeHouseMenuIterator(menuItems);
     }
 }
