@@ -1,5 +1,7 @@
 package org.mine.patterns.iteratorpattern.compose;
 
+import java.util.Iterator;
+
 /**
  * @ClassName Waitress
  * @Description
@@ -16,5 +18,16 @@ public class Waitress {
 
     public void printMenu() {
         allMenus.print();
+    }
+
+    public void printVegetarianMenu() {
+        Iterator iterator = allMenus.createIterator();
+        System.out.println("\nVEGETARIAN MENU\n----");
+        while (iterator.hasNext()) {
+            MenuComponent menuComponent = (MenuComponent)iterator.next();
+            if (menuComponent.isVegetarian()) {
+                menuComponent.print();
+            }
+        }
     }
 }

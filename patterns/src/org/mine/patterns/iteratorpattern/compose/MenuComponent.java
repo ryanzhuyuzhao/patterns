@@ -1,5 +1,7 @@
 package org.mine.patterns.iteratorpattern.compose;
 
+import java.util.Iterator;
+
 /**
  * @ClassName MenuComponent
  * @Description
@@ -33,6 +35,10 @@ public abstract class MenuComponent {
     }
 
     public void print() {
+        throw new UnsupportedOperationException();
+    }
+
+    public Iterator createIterator() {
         throw new UnsupportedOperationException();
     }
 }
